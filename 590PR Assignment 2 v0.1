@@ -1,0 +1,49 @@
+import re
+def openfile(filename):
+    f = open(filename,'r')
+    result = list()
+    temp = list()
+    rx1 = re.compile(r'^[a-zA-Z]')
+    rx2 = re.compile('^\s*L\s*$')
+    for line in open(filename):
+        line = f.readline()
+        if rx1.match(line):
+            #if len(temp)!=0:
+            #    pass
+                #print(temp)
+            date=list()
+            MSW=list() # Maximun sustained wind
+            ToL=0 # Times of Landfall
+            for tline in temp:
+                temp_splt=tline.split(',')
+                date.append(int(temp_splt[0]))
+                MSW.append(int(temp_splt[6]))
+                if rx2.match(temp_splt[2]):
+                    #print (temp_splt)
+                #if temp_splt[2]=="L":
+                    ToL+=1
+            if len(date)!=0:
+                print (min(date),"-",max(date)) # Possible Improvement 1: better format 
+            if len(MSW)!=0:
+                #print (MSW)
+                print (max(MSW))
+                print (ToL)
+                
+                    
+            
+            line_splt = line.split(',')
+            sID = line_splt[0] # Strom system ID
+            sNM = line_splt[1].strip() # Strom Name
+            sTN = int(line_splt[2].strip()) # Stome tracks number
+            print (sID)
+            print (sNM) #strip: delete blanks at both sides. rstrip for right and lstrip for left
+            print (sTN)
+            
+            temp = list()
+            continue
+        temp.append(line)
+        
+        result.append(line)
+    #print (result)
+    return result
+    f.close()   

@@ -22,6 +22,8 @@ Summary of last week:
   3. I also tried to grep the sentences which contains the keywords.
     P. But even if I used a very loose regular expression, the result still lost some instances.
        [^\.]*Lebanon[^\.]*\.
+       Problem should be the linux using a different regular expression style.
+       
     Q. Do you have any suggestion?
   4. I found that you mentioned that you have used perl in the MapAffill paper.
     Q. Is that a language that I can do program and create some functions which can run in command line?
@@ -32,6 +34,36 @@ Summary of last week:
   6. To do next:
     1. Better Regular expression to get as much information as possinble
     2. Finding more neighboors in other data-set?
-    3. 
+    3. Word to vector on the neighboors of 
+    
+get collections first.
+
+PubID
+
+
+MapAfill
+ram
+map to a city
+strings
+build a tool abtory strings flat. Webtool
+
+
+    
+mysql -h sofus -u sofia -p
+34 databases (28 shows)
+select * from patents limit 1 \g;
+
+id varchar(8) leading 0, or contains characters
+application
+inventors
+
+Collections.
+
+
+
+
+    
+    
+
   
       

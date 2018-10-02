@@ -1,0 +1,8 @@
+[10/01]
+  1.Fixed a problem which causes the number of keyword in sentences is much less than the number should be:
+This problem was casued by that for some articles, the keyword is only in the title but not in the article. When I use grep to get the keywords in command line, it will get all of the articles which contains the keywords even if it only appears in the title. However, in the python code, it only search keyword in the abstracts, so it lost some sentences that only contain the keyword in the title.
+However, there still very few keywords are lost in the result of sentences. (4122/4125 for Lebanon)
+
+  2.Fixed another problem which causes the number of keyword in sentences result is slightly less than the number should be:
+  This problem was caused by uppercase characters. For getting the command line in command line, to maximize the searching result, I get all of the instances ignoring the upper/lower case. But in the python code, I only search the keyword which starts from a uppercase character which casued this problem.
+  The result looks good right now (4125/4125 for Lebanon)

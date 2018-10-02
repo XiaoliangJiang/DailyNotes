@@ -5,4 +5,5 @@ However, there still very few keywords are lost in the result of sentences. (412
 
   2.Fixed another problem which causes the number of keyword in sentences result is slightly less than the number should be:
   This problem was caused by uppercase characters. For getting the command line in command line, to maximize the searching result, I get all of the instances ignoring the upper/lower case. But in the python code, I only search the keyword which starts from a uppercase character which casued this problem.
-  The result looks good right now (4125/4125 for Lebanon)
+  The result looks good right now (4125/4125 for Lebanon, 46562/46562 for New York)
+  

@@ -1,9 +1,26 @@
-[10/01]
-  1.Fixed a problem which causes the number of keyword in sentences is much less than the number should be:
-This problem was casued by that for some articles, the keyword is only in the title but not in the article. When I use grep to get the keywords in command line, it will get all of the articles which contains the keywords even if it only appears in the title. However, in the python code, it only search keyword in the abstracts, so it lost some sentences that only contain the keyword in the title.
-However, there still very few keywords are lost in the result of sentences. (4122/4125 for Lebanon)
+For the competition:
+  1. We created a team on the website, and all of us are registered in this team.
+  2. For the evalueation, they provide a python code as evaluator. I have forked this code from github but I did not start to use it.
 
-  2.Fixed another problem which causes the number of keyword in sentences result is slightly less than the number should be:
+For the toponym resolution project:
+  1.Originally, before I use command line to grep the keyword, I created a python code using regular expression to get the keywords. However, due to the low efficiency, I used command line to get several results of given keywords. The result contains three part of things, the PMID, Title and Abstract. Since the size of result file is not too large, based on my previous version, I use python scripts to get all of the sentences which contains the keyword. In this processing, I fixed several problems.
+  2.Fixed a problem which causes the number of keyword in sentences is much less than the number should be:
+This problem was casued by that for some articles, the keyword is only in the title but not in the article. When I use grep to get the keywords in command line, it will get all of the articles which contains the keywords even if it only appears in the title. However, in the python code, it only search keyword in the abstracts, so it lost some sentences that only contain the keyword in the title.
+However, there still very few keywords are lost in the result of sentences.
+
+  3.Fixed another problem which causes the number of keyword in sentences result is slightly less than the number should be:
   This problem was caused by uppercase characters. For getting the command line in command line, to maximize the searching result, I get all of the instances ignoring the upper/lower case. But in the python code, I only search the keyword which starts from a uppercase character which casued this problem.
-  The result looks good right now (4125/4125 for Lebanon, 46562/46562 for New York)
+  The result looks good right now.
+  
+  Appeared time:
+  4125/4125 for Lebanon
+  46562/46562 for New York
+  10861/10861 for Los Angeles
+  11463/11463 for Paris
+  24599/24599 for London
+  12052/12052 for Boston
+  17482/17482 for Beijing
+  214869/214869 for University
+  
+  
   

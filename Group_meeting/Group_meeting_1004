@@ -23,4 +23,30 @@ However, there still very few keywords are lost in the result of sentences.
   214869/214869 for University
   
   
+  To do next:
+  1. revise the method of getting sentences to avoid the sentences are wrongly splited by the decimal, abbreviation or other kind of things instead of the period
+  2.
+  
+  1. sample 
+  ### triage 
+  
+  sentences
+  
+  abtrir sentences.
+  
+  text document
+  data 
+  competation
+  
+  avg citations = 8 years
+  
+  
+  
+  ### Madison, Springfield, Paris,  5 cities....
+  phrase
+  modify code to do that
+  
+  
+  ### if use some mark from others, the maximum % is theirs
+  
   

@@ -1,0 +1,29 @@
+Frequently-needed operations or features in Pandas:
+  1. Heterogeous data types
+  * mutiple data type for a column
+  2. Accessing specific columns
+    a. by nameing 
+    b. by position
+  3. Accessing specific rows
+    a. by position
+    b. by content
+  4. Ordering/sorting
+  5. Min, max, sum, other statistical things
+  6. Other math operations
+  7. Grouping
+  8. Joining dataframes
+
+* NaN = Not A Number special data type
+* VEI = how strong the vocanic
+* .shape = dim()
+* groupby must have a pair of ()
+* .shape does not work on groupby but well on dataframe. Using size instead of .shape
+* v.groupby('Year').size().to_frame() = looks fancy
+* v[['TD_MIN','TD_MAX','TOTAL_DEATHS','TOTAL_DEATHS_DESCRIPTION']] double [], outer slicing, inter list
+* describe()
+
+Possible questions:
+* freq of eruptions for each volcano.
+* find those now dormant
+* look for correlation between VEI and death
+* most dangerous volcano by VEI

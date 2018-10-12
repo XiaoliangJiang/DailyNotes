@@ -1,0 +1,15 @@
+NATURAL     INNER     OUTER
+SELF?               LEFT/RIGHT
+                    FULL OUTER
+                    CROSS JOIN
+                 CARTESIAN PRODUCT
+                
+                
+MOST COMMON
+  1. INNER JOIN ~90%?
+  2. LEFT/RIGHT JOIN
+  3. FULL OUTER
+  4. CROSS JOIN/CARTESIAN PRODUCT
+  
+
+  

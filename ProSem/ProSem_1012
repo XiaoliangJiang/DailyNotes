@@ -1,1 +1,47 @@
+How Open Licensing Can Support Reporducibility in Computational Science
+victoria Stodden
+
+Communalism: scientific results are the common property of the community
+Universalism: all scientists can contribute to science regardless of race,nationality, culture, or gender.
+Disinterestedness: act for the benefit of a common scientific enterprise, rather than for personal gain.
+Skepticism: eg.listen to me since what I said is make sense
+
+Robert Boyle
+independently verified, transparency
+
+Parsing reproducibility
+  - Empirical Reproducibility
+  - Statistical reproducibiliy
+  - Computational reproducibility
+
+Empirical Reproducibility 
+Statistical Reproducibility
+  - False discovery, p-hacking, file drawer problem, overuse and mis-use of p-values, lack of multiple testing adjustment.
+  - Low powermpoor experimental design, nonrandom sampling
+  - data preparation, treatment of outliers,
+  - 
+  - 
+
+how outliers will be dealt with
+sample size estimation for effect size
+whether samples are treated randomly
+whether experimenter blind to the conduct of the experiment
+
+Modeling and simulation
+it is common now to consider  computation as a third branch of science besides theory and experiment.
+This book is about a new fourth paradigm for science basd on data-intensive computing
+
+The ubiquity of error
+The impact of technology
+  - Big data/data driven discovery: high dimentsional data p>>n
+  - Computational Power: simulation of the complete evolution of a physical system, systematically varying parameters
+  - deep intellectual contributions now encoded only on software.
+  
+Infrastructure solutions
+research environments and document enhancement tools
+workflow systems
+dissemination platforms
+legal issues in software
+copyright
+
 

@@ -20,3 +20,5 @@ Handwritten 1 page - A4 or US letter size not us legal letter.
 
 Kate --> Linda aca and registration
 
+cut -f 1,4,5 Madison_sentences.tsv > Madison_sentences2.tsv
+

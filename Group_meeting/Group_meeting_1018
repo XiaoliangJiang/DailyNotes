@@ -1,8 +1,7 @@
   1. Setup the baseline of the competition
-  - Python scripts for evaluation: 1000+ lines
+  - Python scripts for evaluation: 1000+ lines 
   - geonames-services to do the detection and annotation
     This system can do the detection and the disambiguation of the toponyms in raw texts. The disambiguation of all toponyms detected is then performed using a common heuristic, the population heuristic. Using this heuristic, the system always disambiguates a toponym by choosing the place which has the highest population in GeoNames. 
-  
   
   - installed all of the required environment python, java, maven
   - run the eoname-services successfully but failed to get any result...
@@ -16,8 +15,18 @@
   - provided additional office hours on Monday afternoon and evening.
 Just started to work on research from Tuesday evening.
 
+50,000 affiliation
+less recall  hills university minisoda
 
-2018 PubMed database on ram
+focus affiliations
+authors are and located -> place may be in China.
+
+nature language Mappafil -> 
+nlp parser anabor is a women's name -> natural language
+
+
+
+2018 PubMed database on ram sophis
 lowry biochemistry paper
 2009 2010 2015(updating) 2018 Mesh terms may change -> Mesh hierachy create mannually
 
@@ -67,4 +76,11 @@ T5      Protein 28854 28856     We
 #5      AnnotatorNotes T5       BEGIN
 T6      Protein 32862 32863     )
 #6      AnnotatorNotes T6       END
+
+standard name in geoname, and standard name in Mapafill
+
+take all abstract 
+Mapafil
+
+abstract 
 

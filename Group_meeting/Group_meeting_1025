@@ -1,1 +1,51 @@
+For last week, I tried my best to do what we discussed last Thrusday. But due to I have to prepare for 3 presentations in all of my classes. I only worked about 15 hours on the research.
+
+First of all, I tried to get all latest abstracts from PubMed central. The file I used is xml.tar.gz file. First, I tried to decompressed it and using xml.etree.cElementTree package in Python to parse the xml files in each folder. But I encountered two problem, the first one is it is really slow, I can only complete 160 files per second.
+Secondly, I cannot get all of the text in the abstract directly since there are several italic tag in the abstract.
+
+So, I tried to use another package called tar in python to parse the xml file.
+The tar package is very fast that can get 2200 xml files per second.
+
+And what I am doing now is based on these xml file to get the information I want.
+
+10-15 hours
+
+1. ElementTree
+2. tar
+3. XMLstarlet
+
+cElementTree:
+1. decompressed
+2. Slow
+3. italic text 
+
+tar package:
+1. Still need some time to 
+2. italic tages
+
+To do:
+1. PMID, Title, Abstract, affiliation (front)
+focus on the places in the US 
+2. find all of the abbreviation of the states in abstract. 
+3. calculate the how much percent of it contains the geo info, and the distance
+
+what kind of paper.... charles darwin island viriale deseses ebola.... groups of people. 
+what kind of juornal, place names ambiguty. trapical desease VT workflow tool. 2018
+cities? geocode
+contenent 
+
+mesh term, 2007-, 10,000 
+How selecte paper, cities 
+disambiguity
+eg: A with a circle
+  : AS
+Are
+
+
+Indian Journal old -> names changes, names and places 1800s-1900s: tea 
+places technology, study
+
+
+
+
 

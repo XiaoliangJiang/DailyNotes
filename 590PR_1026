@@ -1,0 +1,23 @@
+view-source:http://...
+boat_detail_links = tree.xpath("//tr/td[1]/a[contains(@href,'/view/')]/@href")
+  - //tr find tr hwoever deep
+  - [contains(@href,'/view/')] make sure the href attri contains the '/view./' in it
+
+"//tr/td[@background='/tb/b1.jpg']/preceding-sibling::td/a/@href"
+  - preceding-sibling::td -> return the first sibling
+
+"//tr/td/a[text()='Details']/../following-sibling::td[7]/text()"
+  - following-sibling::td[7]: go 7 siblings down
+
+"//tr/td/a[text()='Details']/../.."
+  - get the whole <tr> as a list
+  
+"print(r'x\ty')"
+  - print x\ty instead of x y
+  
+  
+In class:
+  1. list of the all faculty names
+  2. get associate professors
+  3. match all words containing 'info'
+  

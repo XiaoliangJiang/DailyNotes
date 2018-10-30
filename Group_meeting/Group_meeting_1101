@@ -1,0 +1,1 @@
+SELECT * FROM Journals WHERE Title LIKE '%infection%' limit 50\g; -> got 33

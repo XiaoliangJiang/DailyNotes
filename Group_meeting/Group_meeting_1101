@@ -1,1 +1,5 @@
 SELECT * FROM Journals WHERE Title LIKE '%infection%' limit 50\g; -> got 33
+
+SELECT a.PMID, a.abstract, t.ISSN FROM Abstracts AS a, Articles AS t, Journals AS j WHERE a.PMID=t.PMID AND j.ISSN=t.ISSN AND j.Title LIKE '%infection%' LIMIT 50\g;
+
+SELECT j.Title, j.ISSN, a.PMID, a.abstract FROM Abstracts AS a, Articles AS t, Journals AS j WHERE a.PMID=t.PMID AND j.ISSN=t.issn AND j.Title LIKE '%infection%' GROUP BY a.PMID LIMIT 500\g;

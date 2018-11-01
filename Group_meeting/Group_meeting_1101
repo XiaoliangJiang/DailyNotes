@@ -1,5 +1,25 @@
-SELECT * FROM Journals WHERE Title LIKE '%infection%' limit 50\g; -> got 33
+SELECT * FROM Journals WHERE Title LIKE '%infection%' limit 50\g; 
+-> got 33
 
 SELECT a.PMID, a.abstract, t.ISSN FROM Abstracts AS a, Articles AS t, Journals AS j WHERE a.PMID=t.PMID AND j.ISSN=t.ISSN AND j.Title LIKE '%infection%' LIMIT 50\g;
 
-SELECT j.Title, j.ISSN, a.PMID, a.abstract FROM Abstracts AS a, Articles AS t, Journals AS j WHERE a.PMID=t.PMID AND j.ISSN=t.issn AND j.Title LIKE '%infection%' GROUP BY a.PMID LIMIT 500\g;
+SELECT j.Title, j.ISSN, a.PMID, a.abstract FROM Abstracts AS a, Articles AS t, Journals AS j WHERE a.PMID=t.PMID AND j.ISSN=t.issn AND j.Title LIKE '%infection%' GROUP BY a.PMID LIMIT 50\g;
+
+Final version:
+SELECT r.PMID, r.title, r.mesh, r.journal, f.affiliation, f.affiliation2, b.abstract FROM Articles AS r, Abstracts AS b, Affiliations AS f WHERE r.PMID=b.PMID AND b.PMID=f.PMID AND (r.title LIKE '%infection%' OR r.mesh LIKE '%infection%' OR r.journal LIKE '%infection%') GROUP BY r.PMID LIMIT 50\g;
+
+Final version:
+SELECT 
+
+Problem1: ISSN is not primary key which means that it is not unique and non-empty...
+
+
+
+
+
+
+
+
+Question:
+  1. LUI, SUI, PAIRS
+  2. MeSH_Sem_Cats

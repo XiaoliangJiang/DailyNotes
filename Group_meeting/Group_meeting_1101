@@ -8,18 +8,35 @@ SELECT j.Title, j.ISSN, a.PMID, a.abstract FROM Abstracts AS a, Articles AS t, J
 Final version:
 SELECT r.PMID, r.title, r.mesh, r.journal, f.affiliation, f.affiliation2, b.abstract FROM Articles AS r, Abstracts AS b, Affiliations AS f WHERE r.PMID=b.PMID AND b.PMID=f.PMID AND (r.title LIKE '%infection%' OR r.mesh LIKE '%infection%' OR r.journal LIKE '%infection%') GROUP BY r.PMID LIMIT 50\g;
 
-Final version:
-SELECT 
+select PMID title mesh term journal name affiliation abstract which contains 'infection' in the title, mesh terms or journal name.
+I also got some ideas from your paper about the tropical diseases, I think the article, mesh term or title which includes some word like tropical or cold zone that may indicate a particular area may also contains some information in the abstrats. But I am not an expert in this area. So, I would like to start it with using the infection.
+Malaria 疟疾
+Cholera 霍乱
+Leprosy 麻风
+Schistosomiasis 血吸虫病
+Dengue 登革热
+Leishmaniasis 利什曼病
+Chagas disease 恰加斯病
+Trypanosomiasis 锥虫病
+Ebola 埃博拉
+Taeniasis/cysticerosis 绦虫病/囊虫病
 
-Problem1: ISSN is not primary key which means that it is not unique and non-empty...
 
-
-
-
-
-
+Problem1: 
+  - ISSN is not primary key which means that it is not unique and non-empty...
+  - solved somehow: using articles abstracts and affiliations instead of journals...
+ 
 
 
 Question:
   1. LUI, SUI, PAIRS
   2. MeSH_Sem_Cats
+  3. I know MappAffil can return a pair of coordinates to represent the latitude and longitude from the affiliation. But how can I get the coordiates about the place name in Abstract.
+  4. http://www.movable-type.co.uk/scripts/latlong.html
+  5. Vincent distance selected. Great-circle distance between two points
+
+Shared Task:
+  - they released a weakly labeled corpus.
+  - one is for positive (contains some true placename) another one is for negative which may do not contain any place name but some other interference terms.
+  - the corpus has two columns, the first column contains each word in a given article, the second colums represent the annotator that whether it is a placename or not. If it is, set it as I-Loc, if not set it as zero. It shows what they did on the previous standard corps they use.
+  - But I still trying to run their baseline-code which always returned an error in theri python scripts. I have checked my installationn sevreal times, but I have no idea what happens. So I emailed them agian to seek for some assistance.

@@ -2,3 +2,15 @@ SELECT r.PMID, r.title, r.journal, r.year, f.affiliation, f.affiliation2, b.abst
 
 
 SELECT r.PMID, r.title, r.journal, r.year, f.affiliation, f.affiliation2, b.abstract, r.mesh FROM Articles AS r, Abstracts AS b, Affiliations AS f WHERE r.year>2000 AND r.PMID=b.PMID AND b.PMID=f.PMID AND (r.title LIKE '%infection%' OR r.mesh LIKE '%infection%' OR r.journal LIKE '%infection%') GROUP BY r.PMID LIMIT 50000 OFFSET 50000;
+
+Get data info: 6129218 in total
+16272450, ...., 1       - 100,000
+17942147, 2008, 100,001 - 150,000
+19624287, 2010, 150,001 - 200,000
+21366935, 2012, 200,001 - 250,000
+22871657, 2012, 250,001 - 300,000
+24359808, 2014, 300,001 - 350,000
+25928694, 2015, 350,001 - 400,000
+27558685, 2016, 400,001 - 450,000
+29442195, 2018, 450,001 - 500,000
+30346638, 2018, 500,001 - 612,928

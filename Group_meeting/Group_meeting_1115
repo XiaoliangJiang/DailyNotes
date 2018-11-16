@@ -1,0 +1,32 @@
+100 random sentences have been picked up in total.
+
+50 of them are contains place name, 44 correct, 6 wrong place.
+17 bio term
+15 method
+10 people name
+5 animal name
+3 others
+  1 journal name
+  1 brand name
+
+Precision of detecting: 50%, 50 out of 100 
+Precision of correct detecting: 88%, 44 out of 50
+
+acro-name
+tests, method, desease, 
+some place are famous for researcher, but no one lives there
+
+Rocher test. eg. 
+Hantingdon
+test statistics
+references
+
+Canadian,-> TX but usually country
+genreal english name
+
+wrong name,
+
+publisher, company -> not related
+3 cate for correct -> 1-n, n-1, 1-1
+
+sorted historgram

@@ -1,1 +1,3 @@
 sort -R mapaffil_abstract_sample.tsv | head -100 >> random100_10.tsv
+
+perl -ne 'print if (rand() < .01)' huge_file -> sample.csv

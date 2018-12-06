@@ -1,0 +1,33 @@
+sort -R mapaffil_abstract_sample.tsv | head -100 >> random100_10.tsv
+
+perl -ne 'print if (rand() < .01)' huge_file -> sample.csv
+
+1. stopword list:
+  - New York Heart Association
+  - 
+  
+  
+  
+  
+  
+  
+  
+  
+  using R .perspective data set app, data, assignment. algebra, esti parameter in network.
+  
+  pmc includes all research funded in NIH (National Institute of Health)
+  
+  98%
+  relevant 
+  
+ freq: most common cities, Many, Monte Carlo, people, disease.
+list of 100 things, if eliminate these how proportion
+
+Tring to think about how it affect the result. how many 'in' before, Capitalization, where appear, making feature, position, look for the word around the target. 'in' preporsition, NLP, object, verb, subject. 
+- what kind of improvement, 3 Acronym throw off.
+- begining of the sentences.
+- certain place name is not ambiguous at all.
+- has 1 got n, solution: affiliation, 
+- 20% -|-
+
+  

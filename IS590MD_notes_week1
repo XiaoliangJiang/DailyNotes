@@ -3,3 +3,21 @@ Genni: gender predictor
 Ethnea: ethnicity predictor
  - place and time
 Mapfill: affiliation
+
+30,000,000 abstract?
+
+Modeling
+ - hypothesis testing
+ - regression
+ - Bayes (network)
+ - black box
+ - xplorative
+ - clustering
+ 
+Concept
+ - observation vs randomization
+ - addition vs product
+  - addition not grow fast
+  - product grow fast
+ - confounding
+ garabage-in -> garabage-out

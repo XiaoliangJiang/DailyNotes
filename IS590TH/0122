@@ -10,4 +10,18 @@ What is information?
     1. Susan believe that ...
     2. There is a mouse in the attic.
     3. There is a mouse in the attic is justified for Susan.
-  
+    if eg is true, each of the 1, 2, 3 has to be true. (collectively sufficient/collective sufficiency)
+    a counter example, eg is true but 1, or 2, or 3 is not true. 
+  - eg. S knows that P=df.
+    1. S believes P.
+    2. P
+    3. P is justified for S.
+    B(s,p) & P & J(p,s)
+    
+    1. find an analysis of ...
+    2. develop an analysis of ...
+    A-B-C, if C-A: equivalent
+    A-B-C-D-E, if E-B and E-C: overlap 
+ - in order to do the concept analysis, you have to understand all of the words/terms
+ 
+ 

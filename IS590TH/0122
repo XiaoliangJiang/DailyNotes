@@ -22,6 +22,11 @@ What is information?
     2. develop an analysis of ...
     A-B-C, if C-A: equivalent
     A-B-C-D-E, if E-B and E-C: overlap 
- - in order to do the concept analysis, you have to understand all of the words/terms
+  - in order to do the concept analysis, you have to understand all of the words/terms
  
+Independence:
+  - The elements of S are independent:
+    D1: No subset T of S implies a proposition p that is element of S and not an ellement of T.
+    D2: No two subnsets T or U of S imply the same proposition.
+    
  

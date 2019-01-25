@@ -1,0 +1,31 @@
+Notes:
+
+Problem list/Possible solution
+ 1. bio term (1st, ~25%) :
+ 2. methods(2nd, ~20%)
+ 3. Acornym (3rd, ~16%)
+ 4. wrong place name(4th, ~13%)
+ 5. references （5th, ~10%）
+ 6. partial correct (6th, ~6%)
+ 7. people name (<5%)
+ 8. org name (<5%)
+ 
+ 
+ 
+ Acornym 191/540 has... 
+ 
+ 
+ Solution: 
+ 1. deal with acronym: 4 steps on the borad
+  - find acronym in sentences
+  - for each acronym find position in abstrat (ist appear, in pubmed, byusing xml, parsing tag)
+  - get full name of the acronym, (len(acrony,) words before the position)
+  - compare the full name and the candidate? But how?
+ limitation:
+  - 1. too slow?
+  - 2. how to compair?
+  - 3. not all acronym causes incorrect result
+ 2. nltk: deal with bio name/people name/people name/org name
+ limitation:
+  - ...
+ 

@@ -1,0 +1,69 @@
+Notes:
+
+Problem list/Possible solution
+ 1. bio term (1st, ~25%) :
+ 2. methods(2nd, ~20%)
+ 3. Acornym (3rd, ~16%)
+ 4. wrong place name(4th, ~13%)
+ 5. references （5th, ~10%）
+ 6. partial correct (6th, ~6%)
+ 7. people name (<5%)
+ 8. org name (<5%)
+ 
+4 classifier
+is it a bio term
+acronym
+wrong
+1 classifier with 5 
+or generic features -> machine learning
+  - 1st word in the 
+  - words right after
+  - Ann Arbor - person
+  - stanford parser
+ 
+ 
+ Acornym 191/540 has... 35%
+ 
+ 
+ Solution: 
+ 1. deal with acronym: 4 steps on the borad
+  - find acronym in sentences
+  - for each acronym find position in abstrat (ist appear, in pubmed, byusing xml, parsing tag)
+  - get full name of the acronym, (len(acrony,) words before the position)
+  - compare the full name and the candidate? But how?
+ limitation:
+  - 1. too slow?
+  - 2. how to compare?
+  - 3. not all acronym causes incorrect result
+ 2. nltk: deal with bio name/people name/people name/org name
+ limitation:
+  - ...
+
+
+
+1. reviewed 500 cases. 
+Found that for acronyms, most of them only return a country name or a pair of country names instead of a city name.
+So maybe we do not need to concider them right now.
+In addition, there are two ways to compare the Acronym
+1. trying to compare the Acronym dictionary in the mapaffil then compare the canditate location with it.
+2. trying to target the original phrase of the Acronym in the abstract, then compare the candidate location with it.
+
+USP - University of Sao Paulo
+
+Solve the problem caused by general enlish word pretty well:
+eg. Many, LA, USA	can be tagged as JJ (adjective) easliy by using the nltk package.
+
+1. single result:
+  1. single word keyword
+    1. can be found
+      1.
+    2. cant be found
+  2. more than one word keywords
+2. Multiple result:
+  1. single word keyword
+  2. more than one word keywords
+
+
+
+
+

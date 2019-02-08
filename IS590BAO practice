@@ -1,0 +1,41 @@
+-- Use the NorthWind database to answer the following questions:
+
+-- How many product categories exist in the NorthWind database?
+
+select *
+from jgough2_NorthWind.Categories
+group by CategoryName;
+
+8 categories, Beverages, Condiments, confections, dairy products, grains/cereals, meat/poultry, produce, and seafood.
+
+
+-- How old is our oldest employee? How old is our youngest employee?
+
+select max(BirthDate)
+from jgough2_NorthWind.Employees;
+
+select min(BirthDate)
+from jgough2_NorthWind.Employees;
+
+So I think the oldest one shoud be 82, and the youngest one should be 53.
+
+
+-- How much does Nancy Davolio make?
+
+select Salary 
+from jgough2_NorthWind.Employees where FirstName = 'Nancy';
+
+2954.55
+
+-- When was our last order placed?
+
+select max(OrderDate) from jgough2_NorthWind.Orders;
+
+1998-05-06 00:00:00
+
+-- Have we ever shipped anything to Charleroi?
+
+select count(*) from jgough2_NorthWind.Orders where ShipCity='Charleroi';
+
+Yes, the result is 12 which means that there are 12 products have shipped to Charleroi
+

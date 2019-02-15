@@ -1,6 +1,6 @@
 540,256/1,425,492=37.90% contain coordinates
 472,229/540,256=87.41% have only 1 placename. (I will do the similar things on the 68,027 records later)
-328,753/472,229=69.62% can be found directly
+328,753/472,229=69.62% can be found directly. (143,476
 
 word on the left: (1000 times or more)
 [('', 143476),
@@ -150,3 +150,24 @@ word type of the left neighboor:
  ('WP$', 38),
  ('EX', 26),
  ('FW', 25)]
+
+
+
+The first word on the left of the keyword.
+The first word on the right of the keyword.
+The first word type on the left of the keyword.
+The first word type on the right of the keyword.
+
+4x3->12
+
+characters 3 on the left and 3 on the right
+
+Question:
+ * how to deal with the placename which does not exist in the sentence.
+
+names of authors 
+- Many general english word
+- looks like a author name?
+- short? all? chaptical?
+- 
+- 

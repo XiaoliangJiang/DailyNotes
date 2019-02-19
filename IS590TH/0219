@@ -1,0 +1,15 @@
+x:Snow is white
+y:Schnee ist weiss
+
+x and y are identical propositions
+
+P and Q are the same proposition if and only if
+ for any person S and any propositional attitude A
+  S has A towards P if and only if S has A towards Q
+  
+P and Q are the same proposition if and only if 
+  for any person S any propositional attitude
+    they have towards P, they have toward Q
+    
+A: six is even and seven is odd
+B: seven is odd and six is even

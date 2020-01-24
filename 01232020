@@ -6,3 +6,7 @@ Q after identified valid place names, is it relevant to the study
 Post first, exp than answer, then what you found. 
 90% find 10 not or … in 90% we able to do sth… however we noticed in many cases the place names appears to be no relevant to the study… example
 Place names is part of bio… in that case 
+
+
+we performed an experiment on the abstracts of PubMed publications to find out types of place names in biomedical databases. It is based on MapAffil which is a bibliographic tool for mapping author affiliation strings to geographic locations. The purpose of this experiment is trying to identify the ambiguity of place names in biomedical texts. 
+In addition, comparing with previous researches, we also found that biomedical texts have different misclassification error types and proportions of place names than general English texts. Some discussions about potential solutions for different types of misclassification errors are also included in this paper to improve performance.
